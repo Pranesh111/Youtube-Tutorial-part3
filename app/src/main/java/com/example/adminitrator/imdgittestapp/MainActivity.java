@@ -32,6 +32,9 @@ Button btn1;
                 String str=edt1.getText()+"";
                 if(str!=null || !str.equals("")){
                     Toast.makeText(getApplicationContext(),"fgd",Toast.LENGTH_LONG).show();
+                    //Features 2
+                    String edtText=edt2.getText().toString();
+                    Toast.makeText(getApplicationContext(),edtText,Toast.LENGTH_LONG).show();
                 }
             }
         });
