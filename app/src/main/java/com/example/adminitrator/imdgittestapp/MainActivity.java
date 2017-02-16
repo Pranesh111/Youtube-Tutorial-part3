@@ -21,6 +21,7 @@ Button btn1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btn1=(Button)findViewById(R.id.button);
         edt2=(EditText)findViewById(R.id.editText2);
 
@@ -35,5 +36,32 @@ Button btn1;
                 }
             }
         });
+
+
+        //This is the test code
+        /*
+
+
+
+
+
+           MultiPartEntityRequest request = new MultiPartEntityRequest(url, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                hidepDialog();
+                Log.e(TAG, "Error:" + volleyError.networkResponse);
+                NetworkResponse networkResponse = volleyError.networkResponse;
+                if (listener != null) {
+                    try {
+                        listener.onErrorResponse(tag, networkResponse.statusCode, new String(networkResponse.data));
+                    } catch (Exception e) {
+                        listener.onErrorResponse(tag, HttpStatus.SC_NO_CONTENT, new String(networkResponse.data));
+                        e.printStackTrace();
+
+
+
+
+
+         */
     }
 }
